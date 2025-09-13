@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="gu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>બેન્ક ની મુખ્ય વિગતો</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'gujarati': ['Noto Sans Gujarati', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body class="bg-gradient-to-br from-gray-50 to-gray-100 font-gujarati text-gray-800">
+
+    <div class="flex min-h-screen">
+        <!-- Left Sidebar -->
+        <div class="w-80 bg-white shadow-xl flex flex-col py-6 hidden lg:flex">
+            <!-- Logo Section -->
+            <div class="flex flex-col items-center mb-8 px-6">
+                <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-3">
+                    <svg class="w-8 h-8 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M4 4a2 2 0 00-2 2v1h16V6a2 2 0 00-2-2H4z"></path>
+                        <path fill-rule="evenodd" d="M18 9H2v5a2 2 0 002 2h12a2 2 0 002-2V9zM4 13a1 1 0 011-1h1a1 1 0 110 2H5a1 1 0 01-1-1zm5-1a1 1 0 100 2h1a1 1 0 100-2H9z" clip-rule="evenodd"></path>
+                    </svg>
+                </div>
+                <h2 class="text-lg font-semibold text-gray-800">બેન્ક સિસ્ટમ</h2>
+            </div>
+
+            <!-- Navigation Menu -->
+            <nav class="flex flex-col space-y-2 px-4">
+                <a href="#" class="group flex items-center px-4 py-3 text-sm font-medium bg-blue-50 text-blue-700 border-l-4 border-blue-500 rounded-r-lg transition-all duration-200 hover:bg-blue-100">
+                    <svg class="w-4 h-4 mr-3" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                    </svg>
+                    બેન્ક ની મુખ્ય વિગતો
+                </a>
+                <a href="#" class="group flex items-center px-4 py-3 text-sm font-medium text-gray-600 rounded-lg transition-all duration-200 hover:bg-gray-50 hover:text-gray-900">
+                    <svg class="w-4 h-4 mr-3" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.586L15.414 6A2 2 0 0116 7.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4zm2 6a1 1 0 011-1h6a1 1 0 110 2H7a1 1 0 01-1-1zm1 3a1 1 0 100 2h6a1 1 0 100-2H7z" clip-rule="evenodd"></path>
+                    </svg>
+                    ફોર્મ નં. ૧
+                </a>
+                <a href="#" class="group flex items-center px-4 py-3 text-sm font-medium text-gray-600 rounded-lg transition-all duration-200 hover:bg-gray-50 hover:text-gray-900">
+                    <svg class="w-4 h-4 mr-3" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.586L15.414 6A2 2 0 0116 7.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4zm2 6a1 1 0 011-1h6a1 1 0 110 2H7a1 1 0 01-1-1zm1 3a1 1 0 100 2h6a1 1 0 100-2H7z" clip-rule="evenodd"></path>
+                    </svg>
+                    ફોર્મ નં. ૨
+                </a>
+            </nav>
+
+            <!-- Help Section -->
+            <div class="mt-auto mx-4 p-4 bg-blue-50 rounded-lg">
+                <p class="text-xs text-blue-700 mb-2">મદદ જોઈએ?</p>
+                <button class="text-xs text-blue-600 hover:text-blue-800 underline">સપોર્ટ ટીમ સાથે સંપર્ક કરો</button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <div class="lg:hidden fixed top-4 left-4 z-50">
+            <button id="mobileMenuBtn" class="bg-white p-2 rounded-lg shadow-lg">
+                <svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+        </div>
+
+        <!-- Main Content -->
+        <div class="flex-1 bg-gradient-to-br from-gray-50 to-gray-100">
+            <!-- Header -->
+            <header class="bg-white shadow-sm border-b border-gray-200">
+                <div class="px-6 py-6">
+                    <div class="flex items-center">
+                        <div class="w-2 h-8 bg-blue-500 rounded-full mr-4"></div>
+                        <div>
+                            <h1 class="text-2xl md:text-3xl font-bold text-gray-900">
+                                બેન્ક ની મુખ્ય વિગતો
+                            </h1>
+                            <p class="text-sm text-gray-500 mt-1">કૃપયા તમામ જરૂરી માહિતી ભરો</p>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Form Section -->
+            <div class="p-6 max-w-7xl mx-auto">
+                <form class="bg-white rounded-2xl shadow-xl border border-gray-200 overflow-hidden">
+                    <!-- Form Header -->
+                    <div class="bg-gradient-to-r from-blue-600 to-blue-700 px-8 py-6">
+                        <h2 class="text-xl font-semibold text-white">વેલ્યુએશન વિગતો</h2>
+                        <p class="text-blue-100 text-sm mt-1">તમામ ફીલ્ડ ભરવા આવશ્યક છે</p>
+                    </div>
+
+                    <div class="p-8">
+                        <!-- Section 1: Basic Information -->
+                        <div class="mb-8">
+                            <h3 class="text-lg font-semibold text-gray-800 mb-6 flex items-center">
+                                <span class="w-6 h-6 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center text-sm font-bold mr-3">1</span>
+                                મૂળભૂત માહિતી
+                            </h3>
+                            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                                <div class="space-y-2">
+                                    <label class="block text-sm font-medium text-gray-700">
+                                        પંચક્યાસ કરવાની શાખા <span class="text-red-500">*</span>
+                                    </label>
+                                    <input type="text" placeholder="શાખાનું નામ દાખલ કરો"
+                                        class="w-full p-4 border border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-all duration-200 hover:border-gray-400">
+                                </div>
+
+                                <div class="space-y-2">
+                                    <label class="block text-sm font-medium text-gray-700">
+                                        મુકામ <span class="text-red-500">*</span>
+                                    </label>
+                                    <input type="text" placeholder="સ્થળનું નામ દાખલ કરો"
+                                        class="w-full p-4 border border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-all duration-200 hover:border-gray-400">
+                                </div>
+
+                                <div class="space-y-2">
+                                    <label class="block text-sm font-medium text-gray-700">
+                                        શાખા <span class="text-red-500">*</span>
+                                    </label>
+                                    <input type="text" placeholder="શાખાનું નામ દાખલ કરો"
+                                        class="w-full p-4 border border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-all duration-200 hover:border-gray-400">
+                                </div>
+
+                                <div class="space-y-2">
+                                    <label class="block text-sm font-medium text-gray-700">
+                                        શાખા/ઝોન <span class="text-red-500">*</span>
+                                    </label>
+                                    <input type="text" placeholder="શાખા અથવા ઝોન દાખલ કરો"
+                                        class="w-full p-4 border border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-all duration-200 hover:border-gray-400">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Section 2: Personnel Information -->
+                        <div class="mb-8">
+                            <h3 class="text-lg font-semibold text-gray-800 mb-6 flex items-center">
+                                <span class="w-6 h-6 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center text-sm font-bold mr-3">2</span>
+                                કર્મચારી વિગતો
+                            </h3>
+                            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                                <div class="space-y-2">
+                                    <label class="block text-sm font-medium text-gray-700">
+                                        વેલ્યુઅરનું નામ <span class="text-red-500">*</span>
+                                    </label>
+                                    <input type="text" placeholder="વેલ્યુઅરનું પૂરું નામ દાખલ કરો"
+                                        class="w-full p-4 border border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-all duration-200 hover:border-gray-400">
+                                </div>
+
+                                <div class="space-y-2">
+                                    <label class="block text-sm font-medium text-gray-700">
+                                        ક્રોસ વેલ્યુઅરનું નામ <span class="text-red-500">*</span>
+                                    </label>
+                                    <input type="text" placeholder="ક્રોસ વેલ્યુઅરનું પૂરું નામ દાખલ કરો"
+                                        class="w-full p-4 border border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-all duration-200 hover:border-gray-400">
+                                </div>
+
+                                <div class="space-y-2">
+                                    <label class="block text-sm font-medium text-gray-700">
+                                        પેકેટ રજુ કરનાર બ્રાંચ મેનેજરનું નામ <span class="text-red-500">*</span>
+                                    </label>
+                                    <input type="text" placeholder="બ્રાંચ મેનેજરનું પૂરું નામ દાખલ કરો"
+                                        class="w-full p-4 border border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-all duration-200 hover:border-gray-400">
+                                </div>
+
+                                <div class="space-y-2">
+                                    <label class="block text-sm font-medium text-gray-700">
+                                        જોઈન્ટ કસ્ટડીનું નામ <span class="text-red-500">*</span>
+                                    </label>
+                                    <input type="text" placeholder="જોઈન્ટ કસ્ટડીનું પૂરું નામ દાખલ કરો"
+                                        class="w-full p-4 border border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-all duration-200 hover:border-gray-400">
+                                </div>
+
+                                <div class="space-y-2">
+                                    <label class="block text-sm font-medium text-gray-700">
+                                        નામ <span class="text-red-500">*</span>
+                                    </label>
+                                    <input type="text" placeholder="પૂરું નામ દાખલ કરો"
+                                        class="w-full p-4 border border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-all duration-200 hover:border-gray-400">
+                                </div>
+
+                                <div class="space-y-2">
+                                    <label class="block text-sm font-medium text-gray-700">
+                                        હોદ્દો <span class="text-red-500">*</span>
+                                    </label>
+                                    <input type="text" placeholder="હોદ્દો દાખલ કરો"
+                                        class="w-full p-4 border border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-all duration-200 hover:border-gray-400">
+                                </div>
+
+                                <div class="lg:col-span-2 space-y-2">
+                                    <label class="block text-sm font-medium text-gray-700">
+                                        જેતે સમયના બ્રાંચ મેનેજરની હાલની શાખા <span class="text-red-500">*</span>
+                                    </label>
+                                    <input type="text" placeholder="હાલની શાખાનું નામ દાખલ કરો"
+                                        class="w-full p-4 border border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-all duration-200 hover:border-gray-400">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Section 3: Date & Time Information -->
+                        <div class="mb-8">
+                            <h3 class="text-lg font-semibold text-gray-800 mb-6 flex items-center">
+                                <span class="w-6 h-6 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center text-sm font-bold mr-3">3</span>
+                                તારીખ અને સમય
+                            </h3>
+                            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                                <div class="space-y-2">
+                                    <label class="block text-sm font-medium text-gray-700">
+                                        પંચકયાસ તારીખ <span class="text-red-500">*</span>
+                                    </label>
+                                    <input type="date"
+                                        class="w-full p-4 border border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-all duration-200 hover:border-gray-400">
+                                </div>
+
+                                <div class="space-y-2">
+                                    <label class="block text-sm font-medium text-gray-700">
+                                        પંચકયાસ સમય <span class="text-red-500">*</span>
+                                    </label>
+                                    <input type="time"
+                                        class="w-full p-4 border border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-all duration-200 hover:border-gray-400">
+                                </div>
+
+                                <div class="space-y-2">
+                                    <label class="block text-sm font-medium text-gray-700">
+                                        નોટીસ તારીખ <span class="text-red-500">*</span>
+                                    </label>
+                                    <input type="date"
+                                        class="w-full p-4 border border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-all duration-200 hover:border-gray-400">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Section 4: Additional Information -->
+                        <div class="mb-8">
+                            <h3 class="text-lg font-semibold text-gray-800 mb-6 flex items-center">
+                                <span class="w-6 h-6 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center text-sm font-bold mr-3">4</span>
+                                વધારાની વિગતો
+                            </h3>
+                            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                                <div class="space-y-2">
+                                    <label class="block text-sm font-medium text-gray-700">
+                                        પાસવર્ડ <span class="text-red-500">*</span>
+                                    </label>
+                                    <input type="password" placeholder="સુરક્ષિત પાસવર્ડ દાખલ કરો"
+                                        class="w-full p-4 border border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-all duration-200 hover:border-gray-400">
+                                </div>
+
+                                <div class="space-y-2">
+                                    <label class="block text-sm font-medium text-gray-700">
+                                        ચોકસી ફી <span class="text-red-500">*</span>
+                                    </label>
+                                    <div class="relative">
+                                        <span class="absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-500">₹</span>
+                                        <input type="number" placeholder="0.00"
+                                            class="w-full pl-8 pr-4 py-4 border border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-all duration-200 hover:border-gray-400">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Action Buttons -->
+                        <div class="flex flex-col sm:flex-row gap-4 justify-center pt-6 border-t border-gray-200">
+                            <button type="button"
+                                class="px-8 py-3 border-2 border-gray-300 text-gray-700 font-semibold rounded-xl transition-all duration-300 hover:border-gray-400 hover:bg-gray-50 focus:ring-2 focus:ring-gray-300 focus:outline-none">
+                                રિસેટ કરો
+                            </button>
+                            <button type="submit"
+                                class="px-12 py-3 bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white font-semibold rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 focus:ring-2 focus:ring-blue-500 focus:outline-none">
+                                <span class="flex items-center justify-center">
+                                    <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                    સબમિટ કરો
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Mobile menu functionality
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const sidebar = document.querySelector('.w-80');
+        
+        if (mobileMenuBtn && sidebar) {
+            mobileMenuBtn.addEventListener('click', () => {
+                sidebar.classList.toggle('hidden');
+                sidebar.classList.toggle('fixed');
+                sidebar.classList.toggle('z-40');
+                sidebar.classList.toggle('h-full');
+            });
+        }
+
+        // Form validation and enhancement
+        const form = document.querySelector('form');
+        const inputs = document.querySelectorAll('input[type="text"], input[type="password"], input[type="number"], input[type="date"], input[type="time"]');
+
+        // Add real-time validation
+        inputs.forEach(input => {
+            input.addEventListener('blur', function() {
+                if (this.hasAttribute('required') || this.parentElement.querySelector('span.text-red-500')) {
+                    if (this.value.trim() === '') {
+                        this.classList.add('border-red-500', 'ring-red-200');
+                        this.classList.remove('border-gray-300');
+                    } else {
+                        this.classList.remove('border-red-500', 'ring-red-200');
+                        this.classList.add('border-green-500');
+                    }
+                }
+            });
+
+            input.addEventListener('input', function() {
+                if (this.classList.contains('border-red-500') && this.value.trim() !== '') {
+                    this.classList.remove('border-red-500', 'ring-red-200');
+                    this.classList.add('border-green-500');
+                }
+            });
+        });
+
+        // Form submission
+        if (form) {
+            form.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                // Basic validation
+                let isValid = true;
+                const requiredFields = this.querySelectorAll('input[type="text"], input[type="password"], input[type="number"], input[type="date"], input[type="time"]');
+                
+                requiredFields.forEach(field => {
+                    if (field.parentElement.querySelector('span.text-red-500') && field.value.trim() === '') {
+                        field.classList.add('border-red-500', 'ring-red-200');
+                        isValid = false;
+                    }
+                });
+
+                if (isValid) {
+                    // Show success message
+                    const submitBtn = this.querySelector('button[type="submit"]');
+                    const originalText = submitBtn.innerHTML;
+                    
+                    submitBtn.innerHTML = `
+                        <span class="flex items-center justify-center">
+                            <svg class="animate-spin -ml-1 mr-3 h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                                <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                                <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                            </svg>
+                            સબમિટ થઈ રહ્યું છે...
+                        </span>
+                    `;
+                    
+                    submitBtn.disabled = true;
+
+                    setTimeout(() => {
+                        submitBtn.innerHTML = originalText;
+                        submitBtn.disabled = false;
+                        alert('ફોર્મ સફળતાપૂર્વક સબમિટ થયું!');
+                    }, 2000);
+                }
+            });
+        }
+
+        // Reset button functionality
+        const resetBtn = document.querySelector('button[type="button"]');
+        if (resetBtn) {
+            resetBtn.addEventListener('click', function() {
+                if (confirm('શું તમે ખરેખર ફોર્મ રિસેટ કરવા માંગો છો?')) {
+                    form.reset();
+                    inputs.forEach(input => {
+                        input.classList.remove('border-red-500', 'ring-red-200', 'border-green-500');
+                        input.classList.add('border-gray-300');
+                    });
+                }
+            });
+        }
+    </script>
+
+</body>
+
+</html>

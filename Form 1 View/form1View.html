@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="gu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>બેન્ક ની મુખ્ય વિગતો</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'gujarati': ['Noto Sans Gujarati', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="bg-gradient-to-br from-gray-50 to-gray-100 font-gujarati text-gray-800">
+
+    <div>
+        <div class="flex min-h-screen">
+            <!-- Left Sidebar -->
+            <div class="w-64 lg:w-[20%] h-[100vh] fixed bg-white shadow-xl flex-col py-6 hidden lg:flex transition-transform duration-300 transform lg:transform-none"
+                id="sidebar">
+                <!-- Logo Section -->
+                <div class="flex flex-col items-center mb-8 px-6">
+                    <img class="h-16 md:h-20 lg:h-[100px] w-auto object-contain" src="/Images/logo.png" alt="Logo">
+                    <h2 class="text-base md:text-lg mt-3 md:mt-[15px] font-semibold text-gray-800">પંચકેશ</h2>
+                </div>
+
+                <!-- Navigation Menu -->
+                <nav class="flex flex-col space-y-2 px-4">
+
+                    <a href="/index.html"
+                        class="group flex items-center px-4 py-3 text-sm font-medium text-gray-600 rounded-lg transition-all duration-200 hover:bg-gray-50 hover:text-gray-900">
+                        <svg class="w-4 h-4 mr-3" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                        બેન્ક ની મુખ્ય વિગતો
+                    </a>
+
+                    <a href="/Form 1/form1.html"
+                        class="group flex items-center px-4 py-3 text-sm font-medium text-gray-600 rounded-lg transition-all duration-200 hover:bg-gray-50 hover:text-gray-900">
+                        <svg class="w-4 h-4 mr-3" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd"
+                                d="M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.586L15.414 6A2 2 0 0116 7.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4zm2 6a1 1 0 011-1h6a1 1 0 110 2H7a1 1 0 01-1-1zm1 3a1 1 0 100 2h6a1 1 0 100-2H7z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                        ફોર્મ નં. ૧
+                    </a>
+
+
+                    <a href="/Form 1 View/form1View.html"
+                        class="group flex items-center px-4 py-3 text-sm font-medium bg-blue-50 text-black border-l-4 border-black rounded-r-lg transition-all duration-200 hover:bg-black hover:text-white">
+                        <svg class="w-4 h-4 mr-3" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd"
+                                d="M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.586L15.414 6A2 2 0 0116 7.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4zm2 6a1 1 0 011-1h6a1 1 0 110 2H7a1 1 0 01-1-1zm1 3a1 1 0 100 2h6a1 1 0 100-2H7z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                        ફોર્મ નં. ૧ વ્યુ
+                    </a>
+
+                    <a href="#"
+                        class="group flex items-center px-4 py-3 text-sm font-medium text-gray-600 rounded-lg transition-all duration-200 hover:bg-gray-50 hover:text-gray-900">
+                        <svg class="w-4 h-4 mr-3" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd"
+                                d="M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.586L15.414 6A2 2 0 0116 7.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4zm2 6a1 1 0 011-1h6a1 1 0 110 2H7a1 1 0 01-1-1zm1 3a1 1 0 100 2h6a1 1 0 100-2H7z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                        ફોર્મ નં. ૨ રોજકામ
+                    </a>
+                </nav>
+
+                <!-- Help Section -->
+                <div class="mt-auto mx-4 p-4 bg-blue-50 rounded-lg">
+                    <p class="text-xs text-black mb-2">મદદ જોઈએ?</p>
+                    <button class="text-xs text-black hover:text-black underline">સપોર્ટ ટીમ સાથે સંપર્ક કરો</button>
+                </div>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <div class="lg:hidden fixed top-4 left-4 z-50">
+                <button id="mobileMenuBtn" class="bg-white p-2 rounded-lg shadow-lg">
+                    <svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16">
+                        </path>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Main Content -->
+            <div class="flex-1 bg-white lg:ms-[20%] overflow-auto p-6" id="mainContent">
+
+                <div class="flex items-end space-x-4">
+                    <!-- ઝોન સિલેક્ટ કરો -->
+                    <div class="flex-1 space-y-2">
+                        <label class="block text-xs sm:text-sm font-medium text-gray-700">
+                            ગામનું નામ સિલેક્ટ કરો <span class="text-red-500">*</span>
+                        </label>
+                        <select
+                            class="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm bg-white text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+                            <option value="default">ગામનું નામ સિલેક્ટ કરો</option>
+                            <option value="jetpur">જેતપુર</option>
+                            <option value="navagadh">નવાગઢ</option>
+                        </select>
+                    </div>
+
+                    <!-- કર્જ નંબર સિલેક્ટ કરો -->
+                    <div class="flex-1 space-y-2">
+                        <label class="block text-xs sm:text-sm font-medium text-gray-700">
+                            કર્જ નંબર સિલેક્ટ કરો <span class="text-red-500">*</span>
+                        </label>
+                        <select
+                            class="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm bg-white text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+                            <option value="default">સિલેક્ટ કરો</option>
+                            <option value="num1">૮/૧૧</option>
+                        </select>
+                    </div>
+
+                    <!-- Button -->
+                    <div>
+                        <button class="px-5 py-2 bg-blue-600 text-white rounded-md shadow hover:bg-blue-700 transition">
+                            Submit
+                        </button>
+                    </div>
+                </div>
+
+
+
+                <table class="border-collapse border border-black w-full">
+                    <tr class="border border-black">
+                        <td class="border border-black p-2" colspan="4">
+                            નોંધ : નામદાર બાબા<br>
+                            તારીખ : ૧૦-૦૧-૨૦૨૪
+                        </td>
+                    </tr>
+                    <tr class="border border-black">
+                        <td class="border border-black p-2">પ્રતિ,</td>
+                        <td class="border border-black p-2"></td>
+                        <td class="border border-black p-2"></td>
+                        <td class="border border-black p-2"></td>
+                    </tr>
+                    <tr class="border border-black">
+                        <td class="border border-black p-2 text-end">૧. શ્રી</td>
+                        <td class="border border-black p-2"></td>
+                        <td class="border border-black p-2">મુળ ૩૨૮ ટકા નામદાર</td>
+                        <td class="border border-black p-2"></td>
+                    </tr>
+                    <tr class="border border-black">
+                        <td class="border border-black p-2 text-end">૨. શ્રી</td>
+                        <td class="border border-black p-2">પી.પી. ઉંધાડ</td>
+                        <td class="border border-black p-2">વેલ્યુઅર</td>
+                        <td class="border border-black p-2">મુકામ : જેતપુર</td>
+                    </tr>
+                    <tr class="border border-black">
+                        <td class="border border-black p-2" colspan="4">
+                            રોજ નવાલક ઓફિસથી નોટીસ આપવામાં આવી હતી તે સમયે લોન લેવા માટે ચેક નંબર ૧૨૩૪૫૬ નો ઉપયોગ
+                            કરવામાં આવ્યો હતો અને તેની સાથે જોડાયેલી દસ્તાવેજોમાં નીચેની માહિતી આપવામાં આવી હતી :<br>
+                            નવાલક ઓફિસથી નોટીસ મળ્યા પછી, તેની સાથે જોડાયેલી દસ્તાવેજોની સમીક્ષા કરવામાં આવી હતી અને
+                            તેમાં નીચેની માહિતી મળી :<br>
+                            મુખ્ય બિન્દુઓ : લોન લેવા માટે ચેક નંબર ૧૨૩૪૫૬ નો ઉપયોગ કરવામાં આવ્યો હતો. દસ્તાવેજોમાં
+                            નીચેની માહિતી હતી :<br>
+                            ૧. લોનની રકમ : ૫૦,૦૦૦/- રૂપિયા<br>
+                            ૨. વ્યાજ દર : ૧૦% દર વર્ષે<br>
+                            ૩. ચુકવણીની મુદત : ૫ વર્ષ<br>
+                            ૪. ચુકવણીની તારીખ : દર મહિને ૧૦ તારીખે<br>
+                            નોંધ : ઉપરોક્ત માહિતીની સમીક્ષા કરવામાં આવી હતી અને તેના આધારે નિર્ણય લેવામાં આવ્યો હતો.
+                        </td>
+                    </tr>
+                    <tr class="border border-black">
+                        <td class="border border-black p-2" colspan="4">
+                            નિર્ણય : (જેતપુર ઓફિસ)<br>
+                            નિર્ણય કરવામાં આવ્યો છે કે :<br>
+                            ૧. લોનની મંજૂરી આપવામાં આવી છે (શરતો સાથે),<br>
+                            ૨. મંજૂરી આપવામાં આવેલી રકમ : ૫૦,૦૦૦/- રૂપિયા,<br>
+                            ૩. શરતો :<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;ક. દર મહિને ૧૦ તારીખે ચુકવણી કરવી,<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;ખ. વ્યાજ દર ૧૦% રહેશે,<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;ગ. કોઈપણ પ્રકારની મુશ્કેલીના કિસ્સામાં જેતપુર ઓફિસ સાથે સંપર્ક
+                            કરવો.<br>
+                            (આ નિર્ણય સંબંધિત સમય મર્યાદા ૧૫ દિવસની છે)
+                        </td>
+                    </tr>
+                </table>
+
+                <!-- Download Button -->
+                <div class="text-center mt-6">
+                    <button onclick="downloadPDF()"
+                        class="px-6 py-2 bg-blue-600 text-white rounded-md shadow hover:bg-blue-700">
+                        PDF ડાઉનલોડ કરો
+                    </button>
+                </div>
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+    <script>
+        // Mobile menu functionality
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const sidebar = document.getElementById('sidebar');
+        const mainContent = document.getElementById('mainContent');
+
+        if (mobileMenuBtn && sidebar && mainContent) {
+            mobileMenuBtn.addEventListener('click', () => {
+                sidebar.classList.toggle('hidden');
+                sidebar.classList.toggle('translate-x-0');
+                sidebar.classList.toggle('-translate-x-full');
+                mainContent.classList.toggle('ml-64');
+                document.body.classList.toggle('overflow-hidden');
+            });
+
+            // Close sidebar when clicking outside on mobile
+            document.addEventListener('click', (e) => {
+                if (!sidebar.contains(e.target) && !mobileMenuBtn.contains(e.target) && !sidebar.classList.contains('hidden')) {
+                    sidebar.classList.add('hidden', '-translate-x-full');
+                    sidebar.classList.remove('translate-x-0');
+                    mainContent.classList.remove('ml-64');
+                    document.body.classList.remove('overflow-hidden');
+                }
+            });
+        }
+
+        // Download PDF function
+        async function downloadPDF() {
+            const { jsPDF } = window.jspdf;
+            const element = document.getElementById("notice");
+
+            const canvas = await html2canvas(element, { scale: 2 });
+            const imgData = canvas.toDataURL("image/png");
+
+            const pdf = new jsPDF("p", "mm", "a4");
+            const pageWidth = pdf.internal.pageSize.getWidth();
+
+            const imgProps = pdf.getImageProperties(imgData);
+            const pdfHeight = (imgProps.height * pageWidth) / imgProps.width;
+
+            pdf.addImage(imgData, "PNG", 0, 0, pageWidth, pdfHeight);
+            pdf.save("notice.pdf");
+        }
+    </script>
+</body>
+
+</html>

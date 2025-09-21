@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="gu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>બેન્ક ની મુખ્ય વિગતો</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'gujarati': ['Noto Sans Gujarati', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- Include jsPDF and html2canvas -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+
+<body class="bg-gradient-to-br from-gray-50 to-gray-100 font-gujarati text-gray-800">
+
+
+    <!-- Your existing HTML content remains unchanged -->
+    <div class="flex min-h-screen">
+        <!-- Left Sidebar -->
+        <div class="w-64 lg:w-[20%] h-[100vh] fixed bg-white shadow-xl flex-col py-6 hidden lg:flex transition-transform duration-300 transform lg:transform-none"
+            id="sidebar">
+            <!-- Logo Section -->
+            <div class="flex flex-col items-center px-6 border-b border-gray-100 pb-6">
+                <img class="h-[100px]" src="/Images/logo.png" alt="">
+                <h2 class="text-base md:text-lg mt-3 md:mt-[15px] font-semibold text-gray-800 text-center">પંચ કયાશ
+                </h2>
+            </div>
+            <!-- Navigation Menu -->
+            <nav class="flex flex-col space-y-2 px-4 flex-1">
+                <a href="/index.html"
+                    class="group flex items-center px-4 py-3 text-sm font-medium text-gray-600 rounded-lg transition-all duration-200 hover:bg-gray-50 hover:text-gray-900 hover:shadow-sm">
+                    <svg class="w-4 h-4 mr-3" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                    </svg>
+                    બેન્ક ની મુખ્ય વિગતો
+                </a>
+                <a href="/Form 1/form1.html"
+                    class="group flex items-center px-4 py-3 text-sm font-medium text-gray-600 rounded-lg transition-all duration-200 hover:bg-gray-50 hover:text-gray-900 hover:shadow-sm">
+                    <svg class="w-4 h-4 mr-3" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd"
+                            d="M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.586L15.414 6A2 2 0 0116 7.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4zm2 6a1 1 0 011-1h6a1 1 0 110 2H7a1 1 0 01-1-1zm1 3a1 1 0 100 2h6a1 1 0 100-2H7z"
+                            clip-rule="evenodd"></path>
+                    </svg>
+                    ફોર્મ નં. ૧
+                </a>
+                <a href="/Form 1 View/form1View.html"
+                    class="group flex items-center px-4 py-3 text-sm font-medium text-gray-600 rounded-lg transition-all duration-200 hover:bg-gray-50 hover:text-gray-900 hover:shadow-sm">
+                    <svg class="w-4 h-4 mr-3" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd"
+                            d="M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.586L15.414 6A2 2 0 0116 7.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4zm2 6a1 1 0 011-1h6a1 1 0 110 2H7a1 1 0 01-1-1zm1 3a1 1 0 100 2h6a1 1 0 100-2H7z"
+                            clip-rule="evenodd"></path>
+                    </svg>
+                    ફોર્મ નં. ૧ વ્યુ
+                </a>
+                <a href="/Rojkam/Rojkam.html"
+                    class="group flex items-center px-4 py-3 text-sm font-medium text-gray-600 rounded-lg transition-all duration-200 hover:bg-gray-50 hover:text-gray-900 hover:shadow-sm">
+                    <svg class="w-4 h-4 mr-3" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd"
+                            d="M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.586L15.414 6A2 2 0 0116 7.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4zm2 6a1 1 0 011-1h6a1 1 0 110 2H7a1 1 0 01-1-1zm1 3a1 1 0 100 2h6a1 1 0 100-2H7z"
+                            clip-rule="evenodd"></path>
+                    </svg>
+                    રોજકામ વ્યુ
+                </a>
+                <a href="/Branch Rojkam/branchRojkam.html"
+                    class="group flex items-center px-4 py-3 text-sm font-medium bg-blue-50 text-black border-l-4 border-black rounded-r-lg transition-all duration-200 hover:bg-black hover:text-white shadow-sm">
+                    <svg class="w-4 h-4 mr-3" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd"
+                            d="M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.586L15.414 6A2 2 0 0116 7.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4zm2 6a1 1 0 011-1h6a1 1 0 110 2H7a1 1 0 01-1-1zm1 3a1 1 0 100 2h6a1 1 0 100-2H7z"
+                            clip-rule="evenodd"></path>
+                    </svg>
+                    બ્રાન્ચ રોજકામ
+                </a>
+
+
+                <a href="/Valuer Khat/ValuerKhat.html"
+                    class="group flex items-center px-4 py-3 text-sm font-medium text-gray-600 rounded-lg transition-all duration-200 hover:bg-gray-50 hover:text-gray-900 hover:shadow-sm">
+                    <svg class="w-4 h-4 mr-3" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd"
+                            d="M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.586L15.414 6A2 2 0 0116 7.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4zm2 6a1 1 0 011-1h6a1 1 0 110 2H7a1 1 0 01-1-1zm1 3a1 1 0 100 2h6a1 1 0 100-2H7z"
+                            clip-rule="evenodd"></path>
+                    </svg>
+                    વેલ્યુઅર ખાત
+                </a>
+            </nav>
+            <!-- Help Section -->
+            <div class="mx-4 p-4 bg-blue-50 rounded-lg border border-blue-100">
+                <div class="flex items-center mb-2">
+                    <svg class="w-4 h-4 text-black mr-2" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd"
+                            d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z"
+                            clip-rule="evenodd"></path>
+                    </svg>
+                    <p class="text-xs text-black font-medium">મદદ જોઈએ?</p>
+                </div>
+                <button
+                    class="text-xs text-black hover:text-black underline hover:no-underline transition-all duration-200">સપોર્ટ
+                    ટીમ સાથે સંપર્ક કરો</button>
+            </div>
+        </div>
+        <!-- Mobile Menu Button -->
+        <div class="lg:hidden fixed top-4 left-4 z-50">
+            <button id="mobileMenuBtn"
+                class="bg-white p-3 rounded-lg shadow-lg border border-gray-200 hover:bg-gray-50 transition-all duration-200">
+                <svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16">
+                    </path>
+                </svg>
+            </button>
+        </div>
+        <!-- Main Content -->
+        <div class="flex-1 bg-white lg:ms-[20%] overflow-auto p-6">
+            <div id="bankDetailsForm">
+                <div class="content">
+                    <div class="text-center">
+                        <p class="text-2xl font-bold">શ્રી રાજકોટ ડિસ્ટ્રીક્ટ કો-ઓપ. બેંક લી., રાજકોટ <span
+                                class="px-4">નવાગઢ</span>
+                            શાખા</p>
+                        <p>દાગીના ધિરાણ પંચકયાસ કાર્યવાહી રોજકામ તારીખ : <span class="px-4 font-bold">૧૩-૦૨-૨૦૨૫</span>
+                        </p>
+                        <p><span class="font-bold px-4">નવાગઢ</span> શાખાના દાગીના ધિરાણ પેકેટ પંચકયાસ કાર્યવાહી માટે
+                            <span class="font-bold px-4">૧૮-૦૧-૨૦૨૫</span> ના રોજ ..... વ્યક્તિને ઇસ્યુ કરેલ નોટીસ
+                            નીચેની વિગતે બાજેલ
+                        </p>
+                        <table class="w-[70%] ms-[15%] mt-[30px] text-left border-collapse border border-gray-300 mb-4">
+                            <tr>
+                                <td class="border border-gray-300 p-2 w-1/2">પોસ્ટ દ્વારા વિતરિત નોટિસ સંખ્યા</td>
+                                <td class="border border-gray-300 p-2 w-1/2">પ્રાપ્ત અરજી નોટિસ સંખ્યા</td>
+                            </tr>
+                            <tr>
+                                <td class="border border-gray-300 p-2">રજિસ્ટ્રી દ્વારા વિતરિત નોટિસ સંખ્યા</td>
+                                <td class="border border-gray-300 p-2">પ્રાપ્ત નથી અરજી નોટિસ</td>
+                            </tr>
+                            <tr>
+                                <td class="border border-gray-300 p-2">ટેલીફોન/મોબાઇલ દ્વારા વિતરિત નોટિસ</td>
+                                <td class="border border-gray-300 p-2">યોગ્ય અધિકારી સંખ્યા</td>
+                            </tr>
+                        </table>
+                        <p>બાકી રહેલ ........ વ્યક્તિના પેકેટની પંચોની હાજરીમાં વેલ્યુઅરે પંચકયાસ કાર્યવાહી પેકેટવાઈઝ
+                            નીચે મુજબ કરેલ છે
+                        </p>
+                        <table class="w-full border-collapse border border-gray-300 mb-4">
+
+                            <thead>
+                                <tr>
+                                    <th class="border border-gray-300 p-2" colspan="2"></th>
+                                    <th class="border border-gray-300 p-2" colspan="2"></th>
+                                    <th class="border border-gray-300 p-2" colspan="3">વેલ્યુઅરએ કરેલ વજન</th>
+                                    <th class="border border-gray-300 p-2" colspan="3">ટ્રીસ વેલ્યુઅરએ કરેલ વજન</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="border border-gray-300 p-2" rowspan="">ક્રમ</td>
+                                    <td class="border border-gray-300 p-2" rowspan="">ખાતા નંબર</td>
+                                    <td class="border border-gray-300 p-2" rowspan="">ધિરાણ લેનારનું નામ</td>
+                                    <td class="border border-gray-300 p-2" rowspan="">થાલ પહોંચ । નંબર</td>
+                                    <td class="border border-gray-300 p-2">ગ્રોસ વજન</td>
+                                    <td class="border border-gray-300 p-2">નેટ વજન</td>
+                                    <td class="border border-gray-300 p-2">કેરેટ</td>
+                                    <td class="border border-gray-300 p-2">ગ્રોસ વજન</td>
+                                    <td class="border border-gray-300 p-2">નેટ વજન</td>
+                                    <td class="border border-gray-300 p-2">કેરેટ</td>
+                                    <td class="border border-gray-300 p-2">દાગીના સંખ્યા</td>
+                                    <td class="border border-gray-300 p-2">રીમાકસ</td>
+                                </tr>
+                                <tr>
+                                    <td class="border border-gray-300 p-2">1</td>
+                                    <td class="border border-gray-300 p-2">2</td>
+                                    <td class="border border-gray-300 p-2">3</td>
+                                    <td class="border border-gray-300 p-2">4</td>
+                                    <td class="border border-gray-300 p-2">5</td>
+                                    <td class="border border-gray-300 p-2">6</td>
+                                    <td class="border border-gray-300 p-2">7</td>
+                                    <td class="border border-gray-300 p-2">8</td>
+                                    <td class="border border-gray-300 p-2">9</td>
+                                    <td class="border border-gray-300 p-2">10</td>
+                                    <td class="border border-gray-300 p-2">11</td>
+                                    <td class="border border-gray-300 p-2">12</td>
+                                </tr>
+                                <tr>
+                                    <td class="border border-gray-300 p-2">1</td>
+                                    <td class="border border-gray-300 p-2">૬/૮૮</td>
+                                    <td class="border border-gray-300 p-2">મિથીલા નરેન્દ્રભાઈ શાહ</td>
+                                    <td class="border border-gray-300 p-2"></td>
+                                    <td class="border border-gray-300 p-2"></td>
+                                    <td class="border border-gray-300 p-2"></td>
+                                    <td class="border border-gray-300 p-2"></td>
+                                    <td class="border border-gray-300 p-2"></td>
+                                    <td class="border border-gray-300 p-2"></td>
+                                    <td class="border border-gray-300 p-2"></td>
+                                    <td class="border border-gray-300 p-2"></td>
+                                    <td class="border border-gray-300 p-2"></td>
+                                </tr>
+                                <tr>
+                                    <td class="border border-gray-300 p-2">2</td>
+                                    <td class="border border-gray-300 p-2">૭/૧૦</td>
+                                    <td class="border border-gray-300 p-2">રજનીશ ગણેશભાઈ રાઠોડ</td>
+                                    <td class="border border-gray-300 p-2"></td>
+                                    <td class="border border-gray-300 p-2"></td>
+                                    <td class="border border-gray-300 p-2"></td>
+                                    <td class="border border-gray-300 p-2"></td>
+                                    <td class="border border-gray-300 p-2"></td>
+                                    <td class="border border-gray-300 p-2"></td>
+                                    <td class="border border-gray-300 p-2"></td>
+                                    <td class="border border-gray-300 p-2"></td>
+                                    <td class="border border-gray-300 p-2"></td>
+                                </tr>
+                                <tr>
+                                    <td class="border border-gray-300 p-2">3</td>
+                                    <td class="border border-gray-300 p-2">૭/૨૧</td>
+                                    <td class="border border-gray-300 p-2">નરેન્દ્ર નરેન્દ્રભાઈ પટેલ</td>
+                                    <td class="border border-gray-300 p-2"></td>
+                                    <td class="border border-gray-300 p-2"></td>
+                                    <td class="border border-gray-300 p-2"></td>
+                                    <td class="border border-gray-300 p-2"></td>
+                                    <td class="border border-gray-300 p-2"></td>
+                                    <td class="border border-gray-300 p-2"></td>
+                                    <td class="border border-gray-300 p-2"></td>
+                                    <td class="border border-gray-300 p-2"></td>
+                                    <td class="border border-gray-300 p-2"></td>
+                                </tr>
+                                <tr>
+                                    <td class="border border-gray-300 p-2">4</td>
+                                    <td class="border border-gray-300 p-2">૭/૨૭</td>
+                                    <td class="border border-gray-300 p-2">હેમલતા નરેન્દ્રભાઈ પટેલ</td>
+                                    <td class="border border-gray-300 p-2"></td>
+                                    <td class="border border-gray-300 p-2"></td>
+                                    <td class="border border-gray-300 p-2"></td>
+                                    <td class="border border-gray-300 p-2"></td>
+                                    <td class="border border-gray-300 p-2"></td>
+                                    <td class="border border-gray-300 p-2"></td>
+                                    <td class="border border-gray-300 p-2"></td>
+                                    <td class="border border-gray-300 p-2"></td>
+                                    <td class="border border-gray-300 p-2"></td>
+                                </tr>
+                                <tr>
+                                    <td class="border border-gray-300 p-2">5</td>
+                                    <td class="border border-gray-300 p-2">૭/૩૧</td>
+                                    <td class="border border-gray-300 p-2">નરેન્દ્ર ભગવાનજી શાહ</td>
+                                    <td class="border border-gray-300 p-2"></td>
+                                    <td class="border border-gray-300 p-2"></td>
+                                    <td class="border border-gray-300 p-2"></td>
+                                    <td class="border border-gray-300 p-2"></td>
+                                    <td class="border border-gray-300 p-2"></td>
+                                    <td class="border border-gray-300 p-2"></td>
+                                    <td class="border border-gray-300 p-2"></td>
+                                    <td class="border border-gray-300 p-2"></td>
+                                    <td class="border border-gray-300 p-2"></td>
+                                </tr>
+                                <tr>
+                                    <td class="border border-gray-300 p-2">6</td>
+                                    <td class="border border-gray-300 p-2">૭/૩૯</td>
+                                    <td class="border border-gray-300 p-2">નીતીન નરેન્દ્રભાઈ શાહ</td>
+                                    <td class="border border-gray-300 p-2"></td>
+                                    <td class="border border-gray-300 p-2"></td>
+                                    <td class="border border-gray-300 p-2"></td>
+                                    <td class="border border-gray-300 p-2"></td>
+                                    <td class="border border-gray-300 p-2"></td>
+                                    <td class="border border-gray-300 p-2"></td>
+                                    <td class="border border-gray-300 p-2"></td>
+                                    <td class="border border-gray-300 p-2"></td>
+                                    <td class="border border-gray-300 p-2"></td>
+                                </tr>
+                                <tr>
+                                    <td class="border border-gray-300 p-2">7</td>
+                                    <td class="border border-gray-300 p-2">૭/૫૧</td>
+                                    <td class="border border-gray-300 p-2">નીતીન રમેશભાઈ શાહ</td>
+                                    <td class="border border-gray-300 p-2"></td>
+                                    <td class="border border-gray-300 p-2"></td>
+                                    <td class="border border-gray-300 p-2"></td>
+                                    <td class="border border-gray-300 p-2"></td>
+                                    <td class="border border-gray-300 p-2"></td>
+                                    <td class="border border-gray-300 p-2"></td>
+                                    <td class="border border-gray-300 p-2"></td>
+                                    <td class="border border-gray-300 p-2"></td>
+                                    <td class="border border-gray-300 p-2"></td>
+                                </tr>
+                                <tr>
+                                    <td class="border border-gray-300 p-2">8</td>
+                                    <td class="border border-gray-300 p-2">૭/૬૧</td>
+                                    <td class="border border-gray-300 p-2">નીતીન ભગવાનજી શાહ</td>
+                                    <td class="border border-gray-300 p-2"></td>
+                                    <td class="border border-gray-300 p-2"></td>
+                                    <td class="border border-gray-300 p-2"></td>
+                                    <td class="border border-gray-300 p-2"></td>
+                                    <td class="border border-gray-300 p-2"></td>
+                                    <td class="border border-gray-300 p-2"></td>
+                                    <td class="border border-gray-300 p-2"></td>
+                                    <td class="border border-gray-300 p-2"></td>
+                                    <td class="border border-gray-300 p-2"></td>
+                                </tr>
+                                <tr>
+                                    <td class="border border-gray-300 p-2">9</td>
+                                    <td class="border border-gray-300 p-2">૭/૬૭</td>
+                                    <td class="border border-gray-300 p-2">જીતેન્દ્ર નરેન્દ્રભાઈ શાહ</td>
+                                    <td class="border border-gray-300 p-2"></td>
+                                    <td class="border border-gray-300 p-2"></td>
+                                    <td class="border border-gray-300 p-2"></td>
+                                    <td class="border border-gray-300 p-2"></td>
+                                    <td class="border border-gray-300 p-2"></td>
+                                    <td class="border border-gray-300 p-2"></td>
+                                    <td class="border border-gray-300 p-2"></td>
+                                    <td class="border border-gray-300 p-2"></td>
+                                    <td class="border border-gray-300 p-2"></td>
+                                </tr>
+                                <tr>
+                                    <td class="border border-gray-300 p-2">10</td>
+                                    <td class="border border-gray-300 p-2"></td>
+                                    <td class="border border-gray-300 p-2"></td>
+                                    <td class="border border-gray-300 p-2"></td>
+                                    <td class="border border-gray-300 p-2"></td>
+                                    <td class="border border-gray-300 p-2"></td>
+                                    <td class="border border-gray-300 p-2"></td>
+                                    <td class="border border-gray-300 p-2"></td>
+                                    <td class="border border-gray-300 p-2"></td>
+                                    <td class="border border-gray-300 p-2"></td>
+                                    <td class="border border-gray-300 p-2"></td>
+                                    <td class="border border-gray-300 p-2"></td>
+                                </tr>
+                            </tbody>
+
+                        </table>
+                        <p>તે પંચકયાસ કાર્યવાહી પૂર્ણ કરેલ છે. સીલબંધ પેકેટ નંગ..... જોઈન્ટ કસ્ટડીમાં પરત સોંપેલ છે.
+                            ક્રોસ
+                            વેલ્યુઅરને ચકાસણી ફી રૂ......</p>
+                        <div class="container mx-auto px-4 py-6">
+                            <table class="border-collapse w-full">
+                                <tbody>
+                                    <tr class="bg-white">
+                                        <td class="p-2 text-left" colspan="2">વેલ્યુઅરશ્રી :</td>
+                                        <td class="p-2 text-left" colspan="2">પી.પી. ઉંધાડ</td>
+                                        <td class="p-2 text-left" colspan="2">સહી:</td>
+                                        <td class="p-2 text-left" colspan="2">X ..................</td>
+                                        <td class="p-2 text-left" colspan="4">પીલબંધ પેકેટ પરત મેળેલ છે</td>
+                                    </tr>
+                                    <tr class="bg-white">
+                                        <td class="p-2 text-left" colspan="2">ક્રોસ વેલ્યુઅર :</td>
+                                        <td class="p-2 text-left" colspan="2">જે.એમ. ધકાણ</td>
+                                        <td class="p-2 text-left" colspan="2">સહી:</td>
+                                        <td class="p-2 text-left" colspan="2">X ..................</td>
+                                        <td class="p-2 text-left" colspan="2">X ..................</td>
+                                        <td class="p-2 text-left" colspan="2">X ..................</td>
+                                    </tr>
+                                    <tr class="bg-white">
+                                        <td class="p-2 text-left" colspan="6">હાજર રહેલ પંચોના નામ / સહી :</td>
+                                        <td class="p-2 text-center" colspan="6">શીયર - એકાઉન્ટ બ્રાંચ મેનેજર</td>
+                                    </tr>
+                                    <tr class="bg-white">
+                                        <td class="p-2 text-left" colspan="4">(૧)
+                                            .......................................</td>
+                                        <td class="p-2 text-left" colspan="2">સહી:</td>
+                                        <td class="p-2 text-left" colspan="2">X ..................</td>
+                                        <td class="p-2 text-left" colspan="2">નવાગઢ</td>
+                                        <td class="p-2 text-left" colspan="2">શાખા</td>
+                                    </tr>
+                                    <tr class="bg-white">
+                                        <td class="p-2 text-left" colspan="4">(૧)
+                                            .......................................</td>
+                                        <td class="p-2 text-left" colspan="2">સહી:</td>
+                                        <td class="p-2 text-left" colspan="2">X ..................</td>
+                                        <td class="p-2 text-left" colspan="4">
+                                            .......................................................</td>
+                                    </tr>
+                                    <tr class="bg-white">
+                                        <td class="pt-[50px] text-right" colspan="10">મેનેજેર (ઝોનલ) જેતપુર ઝોન</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Download Button -->
+            <div class="text-center mt-6">
+                <button onclick="downloadPDF()"
+                    class="px-6 py-2 bg-blue-600 text-white rounded-md shadow hover:bg-blue-700">
+                    PDF ડાઉનલોડ કરો
+                </button>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        // Mobile menu functionality
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const sidebar = document.getElementById('sidebar');
+        const mainContent = document.getElementById('mainContent');
+
+        if (mobileMenuBtn && sidebar && mainContent) {
+            mobileMenuBtn.addEventListener('click', () => {
+                sidebar.classList.toggle('hidden');
+                sidebar.classList.toggle('translate-x-0');
+                sidebar.classList.toggle('-translate-x-full');
+                mainContent.classList.toggle('ml-64');
+                document.body.classList.toggle('overflow-hidden');
+            });
+
+            // Close sidebar when clicking outside on mobile
+            document.addEventListener('click', (e) => {
+                if (!sidebar.contains(e.target) && !mobileMenuBtn.contains(e.target) && !sidebar.classList.contains('hidden')) {
+                    sidebar.classList.add('hidden', '-translate-x-full');
+                    sidebar.classList.remove('translate-x-0');
+                    mainContent.classList.remove('ml-64');
+                    document.body.classList.remove('overflow-hidden');
+                }
+            });
+        }
+
+        // PDF Download Functionality
+        function downloadPDF() {
+            const { jsPDF } = window.jspdf;
+            const doc = new jsPDF();
+            const element = document.getElementById('bankDetailsForm');
+
+            // Use html2canvas to capture the content
+            html2canvas(element, {
+                scale: 2, // Increase scale for better quality
+                useCORS: true // Enable if you have external images
+            }).then(canvas => {
+                const imgData = canvas.toDataURL('image/png');
+                const imgWidth = 190; // Width of the image in the PDF
+                const pageHeight = 295; // A4 page height in mm
+                const imgHeight = canvas.height * imgWidth / canvas.width;
+                let heightLeft = imgHeight;
+                let position = 10; // Top margin
+
+                // Add the image to the PDF
+                doc.addImage(imgData, 'PNG', 10, position, imgWidth, imgHeight);
+                heightLeft -= pageHeight;
+
+                // Handle multi-page content
+                while (heightLeft >= 0) {
+                    position = heightLeft - imgHeight + 10; // Adjust position for next page
+                    doc.addPage();
+                    doc.addImage(imgData, 'PNG', 10, position, imgWidth, imgHeight);
+                    heightLeft -= pageHeight;
+                }
+
+                // Save the PDF
+                doc.save('Bank_Details.pdf');
+            }).catch(error => {
+                console.error('Error generating PDF:', error);
+                alert('PDF ડાઉનલોડ કરવામાં ભૂલ થઈ. કૃપા કરીને ફરીથી પ્રયાસ કરો.');
+            });
+        }
+    </script>
+
+</body>
+
+</html>

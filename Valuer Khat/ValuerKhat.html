@@ -33,13 +33,37 @@
                     </h2>
                 </div>
                 <nav class="flex flex-col space-y-2 px-4 flex-1">
-                    <a href="/index.html"
-                        class="group flex items-center px-4 py-3 text-sm font-medium text-gray-600 rounded-lg hover:bg-gray-50 hover:text-gray-900 hover:shadow-sm">
-                        <svg class="w-4 h-4 mr-3" fill="currentColor" viewBox="0 0 20 20">
-                            <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                        </svg>
-                        બેન્ક ની મુખ્ય વિગતો
-                    </a>
+
+                  <div>
+                        <!-- Main Link -->
+                        <button id="mainLink"
+                        class="group flex justify-between items-center w-full px-4 py-3 text-sm font-medium text-gray-600 rounded-lg transition-all duration-200 hover:bg-gray-50 hover:text-gray-900 hover:shadow-sm">
+                            <div class="flex gap-1">
+                                <svg class="w-4 h-4 mr-3" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                </svg>
+                                બેન્ક ની મુખ્ય વિગતો
+                            </div>
+                            <svg id="dropdownIcon" class="w-5 h-5 ml-2 transform transition-transform duration-300"
+                                fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+
+                        <!-- Hidden Options -->
+                        <div id="options" class="hidden mt-2 space-y-2">
+                            <a href="/index.html"
+                                class="block px-4 py-2 text-sm font-medium bg-white border rounded-lg hover:bg-blue-100">
+                                પંચક્યાસની વિગતો
+                            </a>
+                            <a href="/index2.html"
+                                class="block px-4 py-2 text-sm font-medium bg-white border rounded-lg hover:bg-blue-100">
+                                ધિરાણની વિગતો
+                            </a>
+                        </div>
+                    </div>
+
                     <a href="/Form 1/form1.html"
                         class="group flex items-center px-4 py-3 text-sm font-medium text-gray-600 rounded-lg hover:bg-gray-50 hover:text-gray-900 hover:shadow-sm">
                         <svg class="w-4 h-4 mr-3" fill="currentColor" viewBox="0 0 20 20">
@@ -121,13 +145,15 @@
                 <div class="content">
                     <div class="text-center">
                         <p class="text-2xl font-bold">::: દાગીના ધિરાણ પંચકયાસના ક્રોસ વેલ્યુઅરનું બાહેંધરી પત્ર :::
-                            <span class="px-4">નવાગઢ</span> શાખા</p>
+                            <span class="px-4">નવાગઢ</span> શાખા
+                        </p>
                         <p class="mt-[30px]">હું શ્રી <span class="font-bold px-4">જે.એમ. ધકાણ</span> વેલ્યુઅર તરીકે
                             <span class="font-bold px-4">અમરનગર</span> શાખામાં કામગીરી બેંકમાં નિયમ મુજબ જામીનગીરી આપેલ
                             છે. મને ક્રોસ વેલ <span class="font-bold px-4">નવાગઢ</span> શાખામાં દાગીન ધિરાણ પેકેટ
                             પંચકયાસની કાર્યવાહી માટે <span class="font-bold px-4">૧૩-૦૨-૨૦૨૫</span> ના રોજ ક્રોસ
                             વેલ્યુઅર તરીકે કરવાની કામગીરી કરવા ત <span class="font-bold px-4">૧૮-૦૧-૨૦૨૫</span> ના રોજ
-                            નોર્ટીસથી જાણ કરેલ છે.</p>
+                            નોર્ટીસથી જાણ કરેલ છે.
+                        </p>
                         <p class="mt-[30px]">ઉપરોક્ત નોટીસ અન્વયે પંચકયાસ કરવાની થતી શાખામાં હા૧ <span
                                 class="font-bold px-4">૧૩-૦૨-૨૦૨૫</span> ના રોજ નીચેની વિગતે દાગીના ધિરાણના પેકેટની
                             પંચકયાસની કામગીરી કરવામાં આવેલ છે.</p>
@@ -439,6 +465,9 @@
             });
         }
     </script>
+
+    <script src="/common.js"></script>
+
 </body>
 
 </html>

@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>બેન્ક ની મુખ્ય વિગતો</title>
-    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -20,36 +19,29 @@
     </script>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
-    <!-- Include jsPDF and html2canvas -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
 </head>
 
 <body class="bg-gradient-to-br from-gray-50 to-gray-100 font-gujarati text-gray-800">
-
     <div id="bankDetailsForm">
-        <!-- Your existing HTML content remains unchanged -->
         <div class="flex min-h-screen">
-            <!-- Left Sidebar -->
-            <div class="w-64 lg:w-[20%] h-[100vh] fixed bg-white shadow-xl flex-col py-6 hidden lg:flex transition-transform duration-300 transform lg:transform-none"
-                id="sidebar">
-                <!-- Logo Section -->
+            <div class="w-64 lg:w-[20%] h-[100vh] fixed bg-white shadow-xl flex-col py-6 hidden lg:flex" id="sidebar">
                 <div class="flex flex-col items-center px-6 border-b border-gray-100 pb-6">
                     <img class="h-[100px]" src="/Images/logo.png" alt="">
                     <h2 class="text-base md:text-lg mt-3 md:mt-[15px] font-semibold text-gray-800 text-center">પંચ કયાશ
                     </h2>
                 </div>
-                <!-- Navigation Menu -->
                 <nav class="flex flex-col space-y-2 px-4 flex-1">
                     <a href="/index.html"
-                        class="group flex items-center px-4 py-3 text-sm font-medium text-gray-600 rounded-lg transition-all duration-200 hover:bg-gray-50 hover:text-gray-900 hover:shadow-sm">
+                        class="group flex items-center px-4 py-3 text-sm font-medium text-gray-600 rounded-lg hover:bg-gray-50 hover:text-gray-900 hover:shadow-sm">
                         <svg class="w-4 h-4 mr-3" fill="currentColor" viewBox="0 0 20 20">
                             <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                         </svg>
                         બેન્ક ની મુખ્ય વિગતો
                     </a>
                     <a href="/Form 1/form1.html"
-                        class="group flex items-center px-4 py-3 text-sm font-medium text-gray-600 rounded-lg transition-all duration-200 hover:bg-gray-50 hover:text-gray-900 hover:shadow-sm">
+                        class="group flex items-center px-4 py-3 text-sm font-medium text-gray-600 rounded-lg hover:bg-gray-50 hover:text-gray-900 hover:shadow-sm">
                         <svg class="w-4 h-4 mr-3" fill="currentColor" viewBox="0 0 20 20">
                             <path fill-rule="evenodd"
                                 d="M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.586L15.414 6A2 2 0 0116 7.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4zm2 6a1 1 0 011-1h6a1 1 0 110 2H7a1 1 0 01-1-1zm1 3a1 1 0 100 2h6a1 1 0 100-2H7z"
@@ -58,7 +50,7 @@
                         ફોર્મ નં. ૧
                     </a>
                     <a href="/Form 1 View/form1View.html"
-                        class="group flex items-center px-4 py-3 text-sm font-medium text-gray-600 rounded-lg transition-all duration-200 hover:bg-gray-50 hover:text-gray-900 hover:shadow-sm">
+                        class="group flex items-center px-4 py-3 text-sm font-medium text-gray-600 rounded-lg hover:bg-gray-50 hover:text-gray-900 hover:shadow-sm">
                         <svg class="w-4 h-4 mr-3" fill="currentColor" viewBox="0 0 20 20">
                             <path fill-rule="evenodd"
                                 d="M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.586L15.414 6A2 2 0 0116 7.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4zm2 6a1 1 0 011-1h6a1 1 0 110 2H7a1 1 0 01-1-1zm1 3a1 1 0 100 2h6a1 1 0 100-2H7z"
@@ -67,7 +59,7 @@
                         ફોર્મ નં. ૧ વ્યુ
                     </a>
                     <a href="/Rojkam/Rojkam.html"
-                        class="group flex items-center px-4 py-3 text-sm font-medium text-gray-600 rounded-lg transition-all duration-200 hover:bg-gray-50 hover:text-gray-900 hover:shadow-sm">
+                        class="group flex items-center px-4 py-3 text-sm font-medium text-gray-600 rounded-lg hover:bg-gray-50 hover:text-gray-900 hover:shadow-sm">
                         <svg class="w-4 h-4 mr-3" fill="currentColor" viewBox="0 0 20 20">
                             <path fill-rule="evenodd"
                                 d="M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.586L15.414 6A2 2 0 0116 7.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4zm2 6a1 1 0 011-1h6a1 1 0 110 2H7a1 1 0 01-1-1zm1 3a1 1 0 100 2h6a1 1 0 100-2H7z"
@@ -75,9 +67,8 @@
                         </svg>
                         રોજકામ વ્યુ
                     </a>
-
                     <a href="/Branch Rojkam/branchRojkam.html"
-                        class="group flex items-center px-4 py-3 text-sm font-medium text-gray-600 rounded-lg transition-all duration-200 hover:bg-gray-50 hover:text-gray-900 hover:shadow-sm">
+                        class="group flex items-center px-4 py-3 text-sm font-medium text-gray-600 rounded-lg hover:bg-gray-50 hover:text-gray-900 hover:shadow-sm">
                         <svg class="w-4 h-4 mr-3" fill="currentColor" viewBox="0 0 20 20">
                             <path fill-rule="evenodd"
                                 d="M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.586L15.414 6A2 2 0 0116 7.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4zm2 6a1 1 0 011-1h6a1 1 0 110 2H7a1 1 0 01-1-1zm1 3a1 1 0 100 2h6a1 1 0 100-2H7z"
@@ -85,9 +76,8 @@
                         </svg>
                         બ્રાન્ચ રોજકામ
                     </a>
-
                     <a href="/Valuer Khat/ValuerKhat.html"
-                        class="group flex items-center px-4 py-3 text-sm font-medium bg-blue-50 text-black border-l-4 border-black rounded-r-lg transition-all duration-200 hover:bg-black hover:text-white shadow-sm">
+                        class="group flex items-center px-4 py-3 text-sm font-medium bg-blue-50 text-black border-l-4 border-black rounded-r-lg hover:bg-black hover:text-white shadow-sm">
                         <svg class="w-4 h-4 mr-3" fill="currentColor" viewBox="0 0 20 20">
                             <path fill-rule="evenodd"
                                 d="M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.586L15.414 6A2 2 0 0116 7.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4zm2 6a1 1 0 011-1h6a1 1 0 110 2H7a1 1 0 01-1-1zm1 3a1 1 0 100 2h6a1 1 0 100-2H7z"
@@ -95,8 +85,16 @@
                         </svg>
                         વેલ્યુઅર ખાત
                     </a>
+                    <a href="/Report/Report.html"
+                        class="group flex items-center px-4 py-3 text-sm font-medium text-gray-600 rounded-lg hover:bg-gray-50 hover:text-gray-900 hover:shadow-sm">
+                        <svg class="w-4 h-4 mr-3" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd"
+                                d="M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.586L15.414 6A2 2 0 0116 7.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4zm2 6a1 1 0 011-1h6a1 1 0 110 2H7a1 1 0 01-1-1zm1 3a1 1 0 100 2h6a1 1 0 100-2H7z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                        રિપોર્ટ
+                    </a>
                 </nav>
-                <!-- Help Section -->
                 <div class="mx-4 p-4 bg-blue-50 rounded-lg border border-blue-100">
                     <div class="flex items-center mb-2">
                         <svg class="w-4 h-4 text-black mr-2" fill="currentColor" viewBox="0 0 20 20">
@@ -106,49 +104,34 @@
                         </svg>
                         <p class="text-xs text-black font-medium">મદદ જોઈએ?</p>
                     </div>
-                    <button
-                        class="text-xs text-black hover:text-black underline hover:no-underline transition-all duration-200">સપોર્ટ
-                        ટીમ સાથે સંપર્ક કરો</button>
+                    <button class="text-xs text-black hover:text-black underline hover:no-underline">સપોર્ટ ટીમ સાથે
+                        સંપર્ક કરો</button>
                 </div>
             </div>
-            <!-- Mobile Menu Button -->
             <div class="lg:hidden fixed top-4 left-4 z-50">
                 <button id="mobileMenuBtn"
-                    class="bg-white p-3 rounded-lg shadow-lg border border-gray-200 hover:bg-gray-50 transition-all duration-200">
+                    class="bg-white p-3 rounded-lg shadow-lg border border-gray-200 hover:bg-gray-50">
                     <svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M4 6h16M4 12h16M4 18h16">
-                        </path>
+                            d="M4 6h16M4 12h16M4 18h16"></path>
                     </svg>
                 </button>
             </div>
-            <!-- Main Content -->
             <div class="flex-1 bg-white lg:ms-[20%] overflow-auto p-6" id="mainContent">
-
                 <div class="content">
                     <div class="text-center">
                         <p class="text-2xl font-bold">::: દાગીના ધિરાણ પંચકયાસના ક્રોસ વેલ્યુઅરનું બાહેંધરી પત્ર :::
-                            <span class="px-4">નવાગઢ</span>
-                            શાખા
-                        </p>
-
+                            <span class="px-4">નવાગઢ</span> શાખા</p>
                         <p class="mt-[30px]">હું શ્રી <span class="font-bold px-4">જે.એમ. ધકાણ</span> વેલ્યુઅર તરીકે
                             <span class="font-bold px-4">અમરનગર</span> શાખામાં કામગીરી બેંકમાં નિયમ મુજબ જામીનગીરી આપેલ
                             છે. મને ક્રોસ વેલ <span class="font-bold px-4">નવાગઢ</span> શાખામાં દાગીન ધિરાણ પેકેટ
-                            પંચકયાસની કાર્યવાહી માટે <span class="font-bold px-4">૧૩-૦૨-૨૦૨૫</span> ના રોજ
-                            ક્રોસ વેલ્યુઅર તરીકે કરવાની કામગીરી કરવા ત <span class="font-bold px-4">૧૮-૦૧-૨૦૨૫</span> ના
-                            રોજ નોર્ટીસથી જાણ કરેલ છે.
-                        </p>
-
-
-                        <p class="mt-[30px]">
-                            ઉપરોક્ત નોટીસ અન્વયે પંચકયાસ કરવાની થતી શાખામાં હા૧ <span
-                                class="font-bold px-4">૧૩-૦૨-૨૦૨૫</span> ના રોજ નીચેની વિગતે દાગીના
-                            ધિરાણના પેકેટની પંચકયાસની કામગીરી કરવામાં આવેલ છે.
-                        </p>
-
+                            પંચકયાસની કાર્યવાહી માટે <span class="font-bold px-4">૧૩-૦૨-૨૦૨૫</span> ના રોજ ક્રોસ
+                            વેલ્યુઅર તરીકે કરવાની કામગીરી કરવા ત <span class="font-bold px-4">૧૮-૦૧-૨૦૨૫</span> ના રોજ
+                            નોર્ટીસથી જાણ કરેલ છે.</p>
+                        <p class="mt-[30px]">ઉપરોક્ત નોટીસ અન્વયે પંચકયાસ કરવાની થતી શાખામાં હા૧ <span
+                                class="font-bold px-4">૧૩-૦૨-૨૦૨૫</span> ના રોજ નીચેની વિગતે દાગીના ધિરાણના પેકેટની
+                            પંચકયાસની કામગીરી કરવામાં આવેલ છે.</p>
                         <div class="flex w-full p-4">
-                            <!-- First Table -->
                             <div class="w-1/2">
                                 <table class="table-auto w-full border-collapse border border-gray-600 text-center">
                                     <thead class="bg-gray-100">
@@ -161,10 +144,9 @@
                                     <tbody>
                                         <tr>
                                             <td class="p-2 border border-gray-600">૧</td>
-                                            <td class="p-2 border border-gray-600">મીનાબેન તૃપેશભાઈ ડોરાસીય</td>
+                                            <td class="p-2 border border-gray-600">મીનાબેન તૃપેશભાઈ ડોરાસીયા</td>
                                             <td class="p-2 border border-gray-600">૬/૮૮</td>
                                         </tr>
-                                    <tbody>
                                         <tr>
                                             <td class="p-2 border border-gray-600">૨</td>
                                             <td class="p-2 border border-gray-600">રમેશભાઈ જીવરાજભાઈ રાઠોડ</td>
@@ -172,13 +154,13 @@
                                         </tr>
                                         <tr>
                                             <td class="p-2 border border-gray-600">૩</td>
-                                            <td class="p-2 border border-gray-600">યિનાબેન રાજેશભાઈ સાણંદીય</td>
+                                            <td class="p-2 border border-gray-600">યિનાબેન રાજેશભાઈ સાણંદીયા</td>
                                             <td class="p-2 border border-gray-600">૭/૨૧</td>
                                         </tr>
                                         <tr>
-                                            <td class="p-2 border border-gray-600">४</td>
+                                            <td class="p-2 border border-gray-600">૪</td>
                                             <td class="p-2 border border-gray-600">ભનુભાઈ રૂપાભાઇ બગડા</td>
-                                            <td class="p-2 border border-gray-600">७/२७</td>
+                                            <td class="p-2 border border-gray-600">૭/૨૭</td>
                                         </tr>
                                         <tr>
                                             <td class="p-2 border border-gray-600">૫</td>
@@ -186,55 +168,83 @@
                                             <td class="p-2 border border-gray-600">૭/૩૧</td>
                                         </tr>
                                         <tr>
-                                            <td class="p-2 border border-gray-600">૧</td>
-                                            <td class="p-2 border border-gray-600">મીનાબેન તૃપેશભાઈ ડોરાસીય</td>
-                                            <td class="p-2 border border-gray-600">૬/૮૮</td>
+                                            <td class="p-2 border border-gray-600">૬</td>
+                                            <td class="p-2 border border-gray-600">તેજલબેન કૈલાશગીરી ગૌસ્વામી</td>
+                                            <td class="p-2 border border-gray-600">૭/૩૯</td>
                                         </tr>
                                         <tr>
-                                            <td class="p-2 border border-gray-600">૧</td>
-                                            <td class="p-2 border border-gray-600">મીનાબેન તૃપેશભાઈ ડોરાસીય</td>
-                                            <td class="p-2 border border-gray-600">૬/૮૮</td>
+                                            <td class="p-2 border border-gray-600">૭</td>
+                                            <td class="p-2 border border-gray-600">નીખીલ નરેશભાઈ કોટડીયા</td>
+                                            <td class="p-2 border border-gray-600">૭/૫૧</td>
                                         </tr>
                                         <tr>
-                                            <td class="p-2 border border-gray-600">૧</td>
-                                            <td class="p-2 border border-gray-600">મીનાબેન તૃપેશભાઈ ડોરાસીય</td>
-                                            <td class="p-2 border border-gray-600">૬/૮૮</td>
+                                            <td class="p-2 border border-gray-600">૮</td>
+                                            <td class="p-2 border border-gray-600">કિશન રાકેશભાઈ ગોહેલ</td>
+                                            <td class="p-2 border border-gray-600">૭/૬૧</td>
                                         </tr>
                                         <tr>
-                                            <td class="p-2 border border-gray-600">૧</td>
-                                            <td class="p-2 border border-gray-600">મીનાબેન તૃપેશભાઈ ડોરાસીય</td>
-                                            <td class="p-2 border border-gray-600">૬/૮૮</td>
+                                            <td class="p-2 border border-gray-600">૯</td>
+                                            <td class="p-2 border border-gray-600">ગીતાબેન ધનશ્યામભાઈ જોશી</td>
+                                            <td class="p-2 border border-gray-600">૷/૬૭</td>
                                         </tr>
                                         <tr>
-                                            <td class="p-2 border border-gray-600">૧</td>
-                                            <td class="p-2 border border-gray-600">મીનાબેન તૃપેશભાઈ ડોરાસીય</td>
-                                            <td class="p-2 border border-gray-600">૬/૮૮</td>
+                                            <td class="p-2 border border-gray-600">૧૦</td>
+                                            <td class="p-2 border border-gray-600"></td>
+                                            <td class="p-2 border border-gray-600"></td>
                                         </tr>
                                         <tr>
-                                            <td class="p-2 border border-gray-600">૧</td>
-                                            <td class="p-2 border border-gray-600">મીનાબેન તૃપેશભાઈ ડોરાસીય</td>
-                                            <td class="p-2 border border-gray-600">૬/૮૮</td>
+                                            <td class="p-2 border border-gray-600">૧૧</td>
+                                            <td class="p-2 border border-gray-600"></td>
+                                            <td class="p-2 border border-gray-600"></td>
                                         </tr>
                                         <tr>
-                                            <td class="p-2 border border-gray-600">૧</td>
-                                            <td class="p-2 border border-gray-600">મીનાબેન તૃપેશભાઈ ડોરાસીય</td>
-                                            <td class="p-2 border border-gray-600">૬/૮૮</td>
+                                            <td class="p-2 border border-gray-600">૧૨</td>
+                                            <td class="p-2 border border-gray-600"></td>
+                                            <td class="p-2 border border-gray-600"></td>
                                         </tr>
                                         <tr>
-                                            <td class="p-2 border border-gray-600">૧</td>
-                                            <td class="p-2 border border-gray-600">મીનાબેન તૃપેશભાઈ ડોરાસીય</td>
-                                            <td class="p-2 border border-gray-600">૬/૮૮</td>
+                                            <td class="p-2 border border-gray-600">૧૩</td>
+                                            <td class="p-2 border border-gray-600"></td>
+                                            <td class="p-2 border border-gray-600"></td>
                                         </tr>
                                         <tr>
-                                            <td class="p-2 border border-gray-600">૧</td>
-                                            <td class="p-2 border border-gray-600">મીનાબેન તૃપેશભાઈ ડોરાસીય</td>
-                                            <td class="p-2 border border-gray-600">૬/૮૮</td>
+                                            <td class="p-2 border border-gray-600">૧૪</td>
+                                            <td class="p-2 border border-gray-600"></td>
+                                            <td class="p-2 border border-gray-600"></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="p-2 border border-gray-600">૧૫</td>
+                                            <td class="p-2 border border-gray-600"></td>
+                                            <td class="p-2 border border-gray-600"></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="p-2 border border-gray-600">૧૬</td>
+                                            <td class="p-2 border border-gray-600"></td>
+                                            <td class="p-2 border border-gray-600"></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="p-2 border border-gray-600">૧૭</td>
+                                            <td class="p-2 border border-gray-600"></td>
+                                            <td class="p-2 border border-gray-600"></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="p-2 border border-gray-600">૧૮</td>
+                                            <td class="p-2 border border-gray-600"></td>
+                                            <td class="p-2 border border-gray-600"></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="p-2 border border-gray-600">૧૯</td>
+                                            <td class="p-2 border border-gray-600"></td>
+                                            <td class="p-2 border border-gray-600"></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="p-2 border border-gray-600">૨૦</td>
+                                            <td class="p-2 border border-gray-600"></td>
+                                            <td class="p-2 border border-gray-600"></td>
                                         </tr>
                                     </tbody>
                                 </table>
                             </div>
-
-                            <!-- Second Table -->
                             <div class="w-1/2">
                                 <table class="table-auto w-full border-collapse border border-gray-600 text-center">
                                     <thead class="bg-gray-100">
@@ -246,87 +256,182 @@
                                     </thead>
                                     <tbody>
                                         <tr>
-                                            <td class="p-2 border border-gray-600">૧</td>
-                                            <td class="p-2 border border-gray-600">મીનાબેન તૃપેશભાઈ ડોરાસીય</td>
-                                            <td class="p-2 border border-gray-600">૬/૮૮</td>
+                                            <td class="p-2 border border-gray-600">૨૧</td>
+                                            <td class="p-2 border border-gray-600"></td>
+                                            <td class="p-2 border border-gray-600"></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="p-2 border border-gray-600">૨૨</td>
+                                            <td class="p-2 border border-gray-600"></td>
+                                            <td class="p-2 border border-gray-600"></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="p-2 border border-gray-600">૨૩</td>
+                                            <td class="p-2 border border-gray-600"></td>
+                                            <td class="p-2 border border-gray-600"></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="p-2 border border-gray-600">૨૪</td>
+                                            <td class="p-2 border border-gray-600"></td>
+                                            <td class="p-2 border border-gray-600"></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="p-2 border border-gray-600">૨૫</td>
+                                            <td class="p-2 border border-gray-600"></td>
+                                            <td class="p-2 border border-gray-600"></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="p-2 border border-gray-600">૨૬</td>
+                                            <td class="p-2 border border-gray-600"></td>
+                                            <td class="p-2 border border-gray-600"></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="p-2 border border-gray-600">૨૭</td>
+                                            <td class="p-2 border border-gray-600"></td>
+                                            <td class="p-2 border border-gray-600"></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="p-2 border border-gray-600">૨૮</td>
+                                            <td class="p-2 border border-gray-600"></td>
+                                            <td class="p-2 border border-gray-600"></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="p-2 border border-gray-600">૨૯</td>
+                                            <td class="p-2 border border-gray-600"></td>
+                                            <td class="p-2 border border-gray-600"></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="p-2 border border-gray-600">૩૦</td>
+                                            <td class="p-2 border border-gray-600"></td>
+                                            <td class="p-2 border border-gray-600"></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="p-2 border border-gray-600">૩૧</td>
+                                            <td class="p-2 border border-gray-600"></td>
+                                            <td class="p-2 border border-gray-600"></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="p-2 border border-gray-600">૩૨</td>
+                                            <td class="p-2 border border-gray-600"></td>
+                                            <td class="p-2 border border-gray-600"></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="p-2 border border-gray-600">૩૩</td>
+                                            <td class="p-2 border border-gray-600"></td>
+                                            <td class="p-2 border border-gray-600"></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="p-2 border border-gray-600">૩૪</td>
+                                            <td class="p-2 border border-gray-600"></td>
+                                            <td class="p-2 border border-gray-600"></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="p-2 border border-gray-600">૩૫</td>
+                                            <td class="p-2 border border-gray-600"></td>
+                                            <td class="p-2 border border-gray-600"></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="p-2 border border-gray-600">૩૬</td>
+                                            <td class="p-2 border border-gray-600"></td>
+                                            <td class="p-2 border border-gray-600"></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="p-2 border border-gray-600">૩૭</td>
+                                            <td class="p-2 border border-gray-600"></td>
+                                            <td class="p-2 border border-gray-600"></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="p-2 border border-gray-600">૩૮</td>
+                                            <td class="p-2 border border-gray-600"></td>
+                                            <td class="p-2 border border-gray-600"></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="p-2 border border-gray-600">૩૯</td>
+                                            <td class="p-2 border border-gray-600"></td>
+                                            <td class="p-2 border border-gray-600"></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="p-2 border border-gray-600">૪૦</td>
+                                            <td class="p-2 border border-gray-600"></td>
+                                            <td class="p-2 border border-gray-600"></td>
                                         </tr>
                                     </tbody>
                                 </table>
                             </div>
                         </div>
-
+                        <p class="text-left">ઉપરોક્ત વિગતના પંચકયાસ માટે નિયત કરવામાં આવેલ પેકેટ સંખ્યા નંગ
+                            .................. પંચકયાસની કામગીરી દરમ્યાન જે પંચક્યાસ માટે રજુ થયેલ તમામ પેકેટના
+                            દાગીનાનું ક્રોસ વેલ્યુએશન કરતા દાગીનાની શુદ્ધતા પંચક્યાસ રોજ્કામમાં દર્શાવ્યા મુજબ બરાબર
+                            હોવાની બાહેધરી આપું છું.</p><br>
+                        <p class="text-left">ઉપરોક્ત વિગતે પંચક્યાસ કરવામાં આવેલ દાગીના ધિરાણ પેકેટમાં રહેલ દાગીના ધિરાણ
+                            ભરપાઈ કરી છૂટી ન જાય અને દાગીના બેંકના કબજામાં રહે ત્યાં સુધી દાગીના પંચક્યાસના રોજકામમાં
+                            દર્શાવેલ શુદ્ધતા બાબતે વિસંગતતા જોવા મળે તો તે મારી અંગત જવાબદારી સ્વીકારું છું ને બેન્કને
+                            વેલ્યુઅર તરીકે આપવાની થાતી જામીનગીરી આપેલ છે તે જામીનગીરીમાં ક્રોસ વેલ્યુઅર તરીકે સોપવામાં
+                            આવેલ કામગીરીમાં કોઈ અનિયમિતતા તો જણાય બેંકને આપેલ જામીનગીરી બંધન કરતા રહેશે.</p><br>
+                        <p class="text-left">મુદત પૂરી થયે અથવા રાજીનામાથી કે અન્યથા મારા છુટા થયા પછી પણ જો મારા
+                            પ્રમાણપત્રોને કારણે બેંક ને કોઈ ખોટ જાય તો મારા છુટા થયા પછી પણ મારી જવાબદારી ચાલ રહેશે જે
+                            અંગે હં બાહેધરી આપે છે.</p>
+                        <div class="flex justify-end">
+                            <div>
+                                <p>.......................</p>
+                                <p class="font-bold">જે. એમ. ધકાણ</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-
-
-                <!-- Download Button -->
                 <div class="text-center mt-6">
                     <button onclick="downloadPDF()"
-                        class="px-6 py-2 bg-blue-600 text-white rounded-md shadow hover:bg-blue-700">
-                        PDF ડાઉનલોડ કરો
-                    </button>
+                        class="px-6 py-2 bg-blue-600 text-white rounded-md shadow hover:bg-blue-700">PDF ડાઉનલોડ
+                        કરો</button>
                 </div>
             </div>
         </div>
     </div>
-
     <script>
-        // Mobile menu functionality
         const mobileMenuBtn = document.getElementById('mobileMenuBtn');
         const sidebar = document.getElementById('sidebar');
         const mainContent = document.getElementById('mainContent');
 
-        if (mobileMenuBtn && sidebar && mainContent) {
-            mobileMenuBtn.addEventListener('click', () => {
-                sidebar.classList.toggle('hidden');
-                sidebar.classList.toggle('translate-x-0');
-                sidebar.classList.toggle('-translate-x-full');
-                mainContent.classList.toggle('ml-64');
-                document.body.classList.toggle('overflow-hidden');
-            });
+        mobileMenuBtn.addEventListener('click', () => {
+            sidebar.classList.toggle('hidden');
+            sidebar.classList.toggle('translate-x-0');
+            sidebar.classList.toggle('-translate-x-full');
+            mainContent.classList.toggle('ml-64');
+            document.body.classList.toggle('overflow-hidden');
+        });
 
-            // Close sidebar when clicking outside on mobile
-            document.addEventListener('click', (e) => {
-                if (!sidebar.contains(e.target) && !mobileMenuBtn.contains(e.target) && !sidebar.classList.contains('hidden')) {
-                    sidebar.classList.add('hidden', '-translate-x-full');
-                    sidebar.classList.remove('translate-x-0');
-                    mainContent.classList.remove('ml-64');
-                    document.body.classList.remove('overflow-hidden');
-                }
-            });
-        }
+        document.addEventListener('click', (e) => {
+            if (!sidebar.contains(e.target) && !mobileMenuBtn.contains(e.target) && !sidebar.classList.contains('hidden')) {
+                sidebar.classList.add('hidden', '-translate-x-full');
+                sidebar.classList.remove('translate-x-0');
+                mainContent.classList.remove('ml-64');
+                document.body.classList.remove('overflow-hidden');
+            }
+        });
 
-        // PDF Download Functionality
         function downloadPDF() {
             const { jsPDF } = window.jspdf;
             const doc = new jsPDF();
-            const element = document.getElementById('notice');
+            const element = document.querySelector('#mainContent .content');
 
-            // Use html2canvas to capture the content
-            html2canvas(element, {
-                scale: 2, // Increase scale for better quality
-                useCORS: true // Enable if you have external images
-            }).then(canvas => {
+            html2canvas(element, { scale: 2, useCORS: true }).then(canvas => {
                 const imgData = canvas.toDataURL('image/png');
-                const imgWidth = 190; // Width of the image in the PDF
-                const pageHeight = 295; // A4 page height in mm
+                const imgWidth = 190;
+                const pageHeight = 295;
                 const imgHeight = canvas.height * imgWidth / canvas.width;
                 let heightLeft = imgHeight;
-                let position = 10; // Top margin
+                let position = 10;
 
-                // Add the image to the PDF
                 doc.addImage(imgData, 'PNG', 10, position, imgWidth, imgHeight);
                 heightLeft -= pageHeight;
 
-                // Handle multi-page content
                 while (heightLeft >= 0) {
-                    position = heightLeft - imgHeight + 10; // Adjust position for next page
+                    position = heightLeft - imgHeight + 10;
                     doc.addPage();
                     doc.addImage(imgData, 'PNG', 10, position, imgWidth, imgHeight);
                     heightLeft -= pageHeight;
                 }
 
-                // Save the PDF
                 doc.save('Bank_Details.pdf');
             }).catch(error => {
                 console.error('Error generating PDF:', error);
@@ -334,7 +439,6 @@
             });
         }
     </script>
-
 </body>
 
 </html>
